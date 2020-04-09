@@ -470,5 +470,40 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+# Halium/UBports
+
+# Disable FakeSensorServer so UBports can use it
+MINIMEDIA_SENSORSERVER_DISABLE := 1
+
+# Something is also missing here as well
+PRODUCT_PACKAGES += \
+    libmedia_omx \
+    android.frameworks.displayservice@1.0
+
+PRODUCT_PACKAGES += \
+    libion \
+    libmedia_compat_layer \
+    libsf_compat_layer \
+    libui_compat_layer
+   
+# droidmedia
+PRODUCT_PACKAGES += \
+    libdroidmedia \
+    minimediaservice \
+    minisfservice \
+    miniafservice
+
+# Ubuntu
+PRODUCT_PACKAGES += \
+    libbiometry_fp_api \
+    libubuntu_application_api
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubports/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/ubports/70-android.rules:system/halium/usr/lib/lxc-android-config/70-android.rules \
+    $(LOCAL_PATH)/ubports/70-android.rules:system/halium/etc/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/ubports/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubports/init.disabled.rc:system/etc/init/init.disabled.rc
+
