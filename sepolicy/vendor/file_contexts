@@ -83,3 +83,6 @@
 
 # Wifi
 /(vendor|system/vendor)/bin/wifi-mac-generator                  u:object_r:wifi_mac_generator_exec:s0
+
+# Ubuntu Touch
+/ubports-mounter\.sh u:object_r:ubports-mounter_file:s0

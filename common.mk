@@ -499,5 +499,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/70-dumpling.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubuntu/display.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/ubuntu/config-default.xml:system/halium/usr/share/powerd/device_configs/config-default.xml \
-    $(LOCAL_PATH)/ubuntu/media/audiosystem-passthrough.conf:system/halium/usr/share/upstart/sessions/audiosystem-passthrough.conf
-
+    $(LOCAL_PATH)/ubuntu/media/audiosystem-passthrough.conf:system/halium/usr/share/upstart/sessions/audiosystem-passthrough.conf \
+    $(LOCAL_PATH)/ubuntu/usb/setupusb:system/bin/setupusb \
+    $(LOCAL_PATH)/ubuntu/usb/mtp-state.conf:system/halium/etc/init/mtp-state.conf \
+    $(LOCAL_PATH)/ubuntu/usb/mtp-server.conf:system/halium/usr/share/upstart/sessions/mtp-server.conf \
+    $(LOCAL_PATH)/ubuntu/fingerprint/init.fingerprint.rc:system/etc/init/init.fingerprint.rc \
+    $(LOCAL_PATH)/ubuntu/recovery/ubports-mounter.sh:root/ubports-mounter.sh
