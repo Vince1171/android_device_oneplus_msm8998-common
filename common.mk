@@ -503,5 +503,30 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/usb/setupusb:system/bin/setupusb \
     $(LOCAL_PATH)/ubuntu/usb/mtp-state.conf:system/halium/etc/init/mtp-state.conf \
     $(LOCAL_PATH)/ubuntu/usb/mtp-server.conf:system/halium/usr/share/upstart/sessions/mtp-server.conf \
+    $(LOCAL_PATH)/ubuntu/system/init.ubuntu.rc:system/etc/init/init.ubuntu.rc \
     $(LOCAL_PATH)/ubuntu/fingerprint/init.fingerprint.rc:system/etc/init/init.fingerprint.rc \
     $(LOCAL_PATH)/ubuntu/recovery/ubports-mounter.sh:root/ubports-mounter.sh
+
+
+#    libnetutils \
+#    android.hardware.bluetooth@1.0 \
+#    android.hardware.bluetooth.a2dp@1.0
+
+PRODUCT_PACKAGES += \
+    miniafservice \
+    libminisf \
+    rild \
+    android.hardware.radio@1.0 \
+    android.hardware.contexthub@1.0 \
+    android.hardware.media.omx@1.0-service
+
+PRODUCT_COPY_FILES += \
+    device/oneplus/msm8998-common/seccomp_policy/crash_dump.arm.policy:system/etc/seccomp_policy/crash_dump.arm.policy
+
+
+# Kernel Modules Config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/system/init.insmod.sh:vendor/bin/init.insmod.sh \
+    $(LOCAL_PATH)/ubuntu/system/init.insmod.cfg:vendor/etc/init.insmod.cfg \
+    $(LOCAL_PATH)/ubuntu/system/init.insmod_charger.cfg:vendor/etc/init.insmod_charger.cfg
+
