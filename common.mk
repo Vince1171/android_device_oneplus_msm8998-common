@@ -520,6 +520,7 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0 \
     android.hardware.media.omx@1.0-service
 
+# Fixing WTF errors
 PRODUCT_COPY_FILES += \
     device/oneplus/msm8998-common/seccomp_policy/crash_dump.arm.policy:system/etc/seccomp_policy/crash_dump.arm.policy
 

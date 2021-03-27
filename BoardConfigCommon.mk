@@ -62,7 +62,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 
 BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=2048 androidboot.usbconfigfs=true 
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3 
-BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 console=tty0
+BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 console=tty0 
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -267,7 +267,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 TARGET_USES_INTERACTION_BOOST := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/prebuilt/vendor/etc/fstab.qcom
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_msm
 BOARD_HAS_LARGE_FILESYSTEM := true
 
