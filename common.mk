@@ -505,7 +505,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/usb/mtp-server.conf:system/halium/usr/share/upstart/sessions/mtp-server.conf \
     $(LOCAL_PATH)/ubuntu/system/init.ubuntu.rc:system/etc/init/init.ubuntu.rc \
     $(LOCAL_PATH)/ubuntu/fingerprint/init.fingerprint.rc:system/etc/init/init.fingerprint.rc \
-    $(LOCAL_PATH)/ubuntu/recovery/ubports-mounter.sh:root/ubports-mounter.sh
+    $(LOCAL_PATH)/ubuntu/recovery/ubports-mounter.sh:root/ubports-mounter.sh \
+    $(LOCAL_PATH)/ubuntu/system/mount-android.conf:system/halium/etc/init/mount-android.conf
 
 
 #    libnetutils \
