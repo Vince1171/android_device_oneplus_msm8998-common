@@ -505,7 +505,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/system/init.ubuntu.rc:system/etc/init/init.ubuntu.rc \
     $(LOCAL_PATH)/ubuntu/fingerprint/init.fingerprint.rc:system/etc/init/init.fingerprint.rc \
     $(LOCAL_PATH)/ubuntu/recovery/ubports-mounter.sh:root/ubports-mounter.sh \
-    $(LOCAL_PATH)/ubuntu/system/mount-android.conf:system/halium/etc/init/mount-android.conf
+    $(LOCAL_PATH)/ubuntu/system/mount-android.conf:system/halium/etc/init/mount-android.conf \
+    $(LOCAL_PATH)/ubuntu/tri_state.py:system/halium/usr/share/tri_state_switch/tri_state.py
 
 
 #    libnetutils \
