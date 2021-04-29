@@ -505,8 +505,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/system/init.ubuntu.rc:system/etc/init/init.ubuntu.rc \
     $(LOCAL_PATH)/ubuntu/fingerprint/init.fingerprint.rc:system/etc/init/init.fingerprint.rc \
     $(LOCAL_PATH)/ubuntu/recovery/ubports-mounter.sh:root/ubports-mounter.sh \
-    $(LOCAL_PATH)/ubuntu/system/mount-android.conf:system/halium/etc/init/mount-android.conf \
-    $(LOCAL_PATH)/ubuntu/network/indicator-network.conf:system/halium/usr/share/upstart/sessions/indicator-network.conf
+    $(LOCAL_PATH)/ubuntu/system/mount-android.conf:system/halium/etc/init/mount-android.conf
+
+
+#    libnetutils \
+#    android.hardware.bluetooth@1.0 \
+#    android.hardware.bluetooth.a2dp@1.0
 
 PRODUCT_PACKAGES += \
     miniafservice \
