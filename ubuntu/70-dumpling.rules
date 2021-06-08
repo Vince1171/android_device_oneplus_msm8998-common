@@ -262,4 +262,4 @@ ACTION=="add", KERNEL=="block/platform/soc/7c4000.sdhci/by-name/frp", OWNER="sys
 ACTION=="add", KERNEL=="block/platform/soc/8804000.sdhci/by-name/frp", OWNER="system", GROUP="system", MODE="0600"
 ACTION=="add", KERNEL=="kmsg", OWNER="root", GROUP="system", MODE="0620"
 ACTION=="add", KERNEL=="msm_npu", OWNER="system", GROUP="system", MODE="0644"
-ACTION=="change", DEVPATH=="/devices/virtual/switch/tri-state-key", SUBSYSTEM=="switch", RUN+="/usr/bin/python3 /system/halium/usr/share/tri_state_switch/tri_state.py"
+ACTION=="change", DEVPATH=="/devices/virtual/switch/tri-state-key", SUBSYSTEM=="switch", RUN+="/usr/bin/python3 /system/bin/tri_state.py"
